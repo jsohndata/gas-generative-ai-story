@@ -1,0 +1,29 @@
+.gallery {
+  .card {
+    background-color: rgba(240, 248, 255, 0.725);
+    
+    height: 100%;
+    
+   img {
+      aspect-ratio: 4/2.5;
+      object-fit: cover;
+    }
+  }
+}
+
+.modal {
+  img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+
+  .close-dialog {
+    padding: 4px;
+    opacity: 0.47;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transform: translateX(-50%);
+  }
+}

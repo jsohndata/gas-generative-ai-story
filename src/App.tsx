@@ -1,7 +1,9 @@
 import React from 'react';
-import './styles/App.scss';
-import Home from './pages/Home';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.scss';
+
 
 function App() {
   return (
