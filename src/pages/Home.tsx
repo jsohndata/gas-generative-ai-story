@@ -41,6 +41,10 @@ const Home = () => {
 
         <Row className="g-0">
           <Col>
+            <Image src={imageUri + "male-motorycycle-riding-1.webp"}
+             className="flip-180" />
+          </Col>
+          <Col>
             <Image src={imageUri + "male-riding-motorcycle.jpg"} />
           </Col>
         </Row>    
