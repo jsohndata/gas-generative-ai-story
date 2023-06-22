@@ -41,11 +41,13 @@ const Home = () => {
 
         <Row className="g-0">
           <Col>
-            <Image src={imageUri + "male-motorycycle-riding-1.webp"}
-             className="flip-180" />
+            <Image src={imageUri + "male-motorycycle-riding-2.webp"} />
           </Col>
           <Col>
-            <Image src={imageUri + "male-riding-motorcycle.jpg"} />
+            <Image src={imageUri + "male-motorcycle-revving.webp"} />
+          </Col>
+          <Col>
+            <Image src={imageUri + "male-motorcycle-standing.webp"} />
           </Col>
         </Row>    
       </Container>

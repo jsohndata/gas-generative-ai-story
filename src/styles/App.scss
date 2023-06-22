@@ -2,6 +2,10 @@
   transform: scaleX(-1);
 }
 
+.bnw {
+  filter: grayscale(100%);
+}
+
 section {
   width: 99.9%;
   margin: 0 auto;
