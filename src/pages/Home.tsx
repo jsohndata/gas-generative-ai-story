@@ -22,12 +22,14 @@ const Home = () => {
               </Row>
 
               <Row className="g-0">
-                <Col lg={6}><Image src={imageUri + "female-thinking.jpg"} /></Col>
-                <Col lg={6}><Image src={imageUri + "male-laughing.jpg"} /></Col>
+                <Col lg={8}><Image src={imageUri + "couple-laughing.jpg"} /></Col>
+                <Col lg={4}><Image src={imageUri + "male-laughing.jpg"} /></Col>
               </Row>
 
               <Row className="g-0">
                 <Col lg={12}><Image src={imageUri + "male-wrist-watch.jpg"} /></Col>
+                <Col lg={6}><Image src={imageUri + "female-thinking.jpg"} className="flip-180" /></Col>
+
               </Row>
 
               <Row className="g-0">
@@ -37,11 +39,17 @@ const Home = () => {
               </Row>
             </Container>            
           </Col>
-        </Row>  
+        </Row>
+
+        <Row>
+          <Col>
+            <Image src={imageUri + "female-profile.jpg"} />
+          </Col>
+        </Row>
 
         <Row className="g-0">
           <Col>
-            <Image src={imageUri + "male-motorycycle-riding-2.webp"} />
+            <Image src={imageUri + "motoryclce-standing.webp"} />
           </Col>
           <Col>
             <Image src={imageUri + "male-motorcycle-revving.webp"} />
@@ -49,7 +57,14 @@ const Home = () => {
           <Col>
             <Image src={imageUri + "male-motorcycle-standing.webp"} />
           </Col>
-        </Row>    
+        </Row>
+
+        <Row className="bg-grey-dark">
+          <Col
+            xs={{span: 6, offset: 3}}>
+            <Image src={imageUri + "umbrella-pink-standing.webp"} />
+          </Col>
+        </Row>
       </Container>
       </section>
     </AppLayout>
