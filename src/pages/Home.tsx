@@ -47,6 +47,13 @@ const Home = () => {
           </Col>
         </Row>
 
+        <Row className="bg-grey-dark">
+          <Col
+            xs={{span: 6, offset: 3}}>
+            <Image src={imageUri + "umbrella-pink-standing.webp"} />
+          </Col>
+        </Row>
+
         <Row className="g-0">
           <Col>
             <Image src={imageUri + "motoryclce-standing.webp"} />
@@ -59,12 +66,7 @@ const Home = () => {
           </Col>
         </Row>
 
-        <Row className="bg-grey-dark">
-          <Col
-            xs={{span: 6, offset: 3}}>
-            <Image src={imageUri + "umbrella-pink-standing.webp"} />
-          </Col>
-        </Row>
+
       </Container>
       </section>
     </AppLayout>
