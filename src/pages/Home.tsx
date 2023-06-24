@@ -53,6 +53,7 @@ const Home = () => {
             <Image src={imageUri + "umbrella-pink-standing.webp"} />
           </Col>
         </Row>
+    
 
         <Row className="g-0">
           <Col>
