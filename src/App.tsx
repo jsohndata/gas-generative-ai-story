@@ -12,6 +12,7 @@ function App() {
       <Routes>        
         <Route path="/motion" element={<Motion />} />
         <Route path="/still" element={ <Home /> } />
+        <Route path="/" element={ <Home /> } />
         <Route path="/*" element={ <Err404 /> } />
       </Routes>
     </HashRouter>
