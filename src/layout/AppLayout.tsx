@@ -1,15 +1,44 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import Spotify from "./Spotify";
 import Footer from "./Footer";
+
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 interface AppLayoutProps {
   children: ReactNode;
 }
 
 const AppLayout = ({ children }: AppLayoutProps) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-    <Spotify />
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link onClick={handleShow}>Spot</Nav.Link>
+            <Nav.Link href="/visual-story/">Still</Nav.Link>
+            <Nav.Link href="/visual-story/motion">Motion</Nav.Link>            
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+      <Offcanvas className="bg-dark" show={show} onHide={handleClose}>
+      <Spotify />
+      </Offcanvas>
+
     {children}
     <Footer />
     </>

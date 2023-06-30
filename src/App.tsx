@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>        
-        <Route path="/visual-story/page" element={ <Motion /> } />
+        <Route path="/visual-story/motion" element={ <Motion /> } />
         <Route path="/visual-story/" element={ <Home /> } />
         <Route path="/visual-story/*" element={ <Err404 /> } />
       </Routes>

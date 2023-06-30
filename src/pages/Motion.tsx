@@ -21,6 +21,9 @@ const videoFile5 = imageUri+'/motion-street.mp4';
 const imageFile6 = imageUri+'/motion-cybernet-robot.png';
 const videoFile6 = imageUri+'/motion-cybernet-robot.mp4';
 
+const imageFile7 = imageUri+'/motion-twins.png';
+const videoFile7 = imageUri+'/motion-twins.mp4';
+
 
 
 const Motion = () => {
@@ -30,6 +33,7 @@ const Motion = () => {
   const [isVideoPlaying4, setIsVideoPlaying4] = useState(false);
   const [isVideoPlaying5, setIsVideoPlaying5] = useState(false);
   const [isVideoPlaying6, setIsVideoPlaying6] = useState(false);
+  const [isVideoPlaying7, setIsVideoPlaying7] = useState(false);
 
 
   const toggleView = (videoPlayingId: any) => {
@@ -91,7 +95,7 @@ const Motion = () => {
             </div>
           </Col>
 
-          <Col xl={4}>
+          <Col md={6} xl={4}>
           <div className="motion-container">
               {!isVideoPlaying3 ? (
                 <Image 
@@ -117,7 +121,7 @@ const Motion = () => {
           </Col>
 
 
-          <Col >
+          <Col md={6} xl={4}>
           <div className="motion-container">
               {!isVideoPlaying4 ? (
                 <Image 
@@ -142,7 +146,7 @@ const Motion = () => {
             </div>
           </Col>
 
-          <Col >
+          <Col className="d-flex align-items-center">
           <div className="motion-container">
               {!isVideoPlaying6 ? (
                 <Image 
@@ -167,7 +171,32 @@ const Motion = () => {
             </div>
           </Col>
 
-          <Col xs={12}>
+          <Col className="d-flex align-items-end">
+          <div className="motion-container">
+              {!isVideoPlaying7 ? (
+                <Image 
+                  fluid                   
+                  src={imageFile7} 
+                  alt="Click Me" 
+                  onClick={ () => toggleView(setIsVideoPlaying7)}
+                  />
+              ) : (
+                <video         
+                  autoPlay
+                  controls
+                  style={{ 
+                    width: '100%', 
+                    border: 'none',
+                    padding: '0',
+                    margin: '0',
+                  }}>
+                  <source src={videoFile7} type="video/mp4" />
+                </video>
+              )}
+            </div>
+          </Col>
+
+          <Col xs={12} id="banner">
             <div className="motion-container">
               {!isVideoPlaying5 ? (
                 <Image 

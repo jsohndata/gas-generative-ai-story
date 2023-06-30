@@ -3,13 +3,17 @@ body {
 }
 
 #motion {
-  background-color: rgba(114, 27, 161, 0.818);
+  background-color: rgba(27, 5, 39, 0.818);
   background-blend-mode: color;
   background-image: url('../../public/images/bg1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-attachment: fixed;  
+  background-attachment: fixed;
+
+  #banner {
+    margin: 100px 0px 200px 0px;
+  }
 
   .motion-container {
     border: 0.7rem solid rgba(0, 0, 0, 0.566);
