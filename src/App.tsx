@@ -1,18 +1,20 @@
 import React from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Page from './pages/Page';
+import Err404 from './pages/Err404';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.scss';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>        
-        <Route path="/page" element={ <Page /> } />
-        <Route path="/" element={ <Home /> } />
+        <Route path="/visual-story/page" element={ <Page /> } />
+        <Route path="/visual-story/" element={ <Home /> } />
+        <Route path="/visual-story/*" element={ <Home /> } />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

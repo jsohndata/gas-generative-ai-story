@@ -1,51 +1,46 @@
+import { useState } from "react";
 import { Container, Row, Col, Image } from "../utils/Bootstrap"
 import AppLayout from "../layout/AppLayout";
 
+const imageUri = process.env.PUBLIC_URL + '/images';
+const imageFile = imageUri+'/motion-cyber-girl-still.webp';
+const videoFile = imageUri+'/motion-cyber-girl-movie.mp4';
 
 const Page = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-  const imageUri = process.env.PUBLIC_URL + '/images/';
+  const handleClick = () => {
+    setIsVideoPlaying(true);
+  };
 
   return (
     <AppLayout>
-      <section>
-      <Container fluid className="visual-board">
-        <Row className="g-0">
-          <Col lg={5}>
-            <Image src={imageUri + "city-vertical.jpg"} />
-          </Col>
-
-          <Col lg={7}>
-            <Container fluid>
-              <Row className="g-0">
-                <Col lg={12}><Image src={imageUri + "cafe-two-people.jpg"} /></Col>
-              </Row>
-
-              <Row className="g-0">
-                <Col lg={6}><Image src={imageUri + "female-thinking.jpg"} /></Col>
-                <Col lg={6}><Image src={imageUri + "male-laughing.jpg"} /></Col>
-              </Row>
-
-              <Row className="g-0">
-                <Col lg={12}><Image src={imageUri + "male-wrist-watch.jpg"} /></Col>
-              </Row>
-
-              <Row className="g-0">
-                <Col>
-                  <Image src={imageUri + "female-looking-out.jpg"} />
-                </Col>
-              </Row>
-            </Container>            
-          </Col>
-        </Row>  
-
-        <Row className="g-0">
+      <Container>
+        <Row>
           <Col>
-            <Image src={imageUri + "male-riding-motorcycle.jpg"} />
+            {!isVideoPlaying ? (
+              <Image 
+                src={imageFile} 
+                alt="Click Me" 
+                onClick={handleClick}
+                style={{ width: '100%', }} />
+            ) : (
+              <video         
+                autoPlay
+                controls
+                style={{ 
+                  width: '100%', 
+                  border: 'none',
+                  padding: '0',
+                  margin: '0',
+                }}>
+                <source src={videoFile} type="video/mp4" />
+              </video>
+            )}
           </Col>
-        </Row>    
+          
+        </Row>
       </Container>
-      </section>
     </AppLayout>
   );
 }

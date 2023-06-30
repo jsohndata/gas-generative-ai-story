@@ -47,7 +47,7 @@ const Home = () => {
           </Col>
         </Row>
 
-        <Row className="bg-grey-dark">
+        <Row>
           <Col
             xs={{span: 6, offset: 3}}>
             <Image src={imageUri + "umbrella-pink-standing.webp"} />

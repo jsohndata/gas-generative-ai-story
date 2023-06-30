@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(36, 36, 37);
+}
+
 .flip-180 {
   transform: scaleX(-1);
 }
@@ -10,14 +14,13 @@
   background-color: #48424a;
 }
 
+
 section {
   width: 99.9%;
   margin: 0 auto;
 }
 
 .visual-board {
-  background-color: #131313;
-
   img {
     width: 100%;
     height: 100%;
