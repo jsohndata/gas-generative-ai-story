@@ -2,6 +2,20 @@ body {
   background-color: rgb(36, 36, 37);
 }
 
+#motion {
+  background-color: rgba(114, 27, 161, 0.818);
+  background-blend-mode: color;
+  background-image: url('../../public/images/bg1.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;  
+
+  .motion-container {
+    border: 0.7rem solid rgba(0, 0, 0, 0.566);
+  }
+}
+
 .flip-180 {
   transform: scaleX(-1);
 }
