@@ -3,8 +3,8 @@ import { Container, Row, Col, Image } from "../utils/Bootstrap"
 import AppLayout from "../layout/AppLayout";
 
 const imageUri = process.env.PUBLIC_URL + '/images';
-const imageFile1 = imageUri+'/motion-cyber-girl-still.webp';
-const videoFile1 = imageUri+'/motion-cyber-girl-movie.mp4';
+const imageFile1 = imageUri+'/motion-cyber-girl.webp';
+const videoFile1 = imageUri+'/motion-cyber-girl.mp4';
 
 const imageFile2 = imageUri+'/motion-cyberpunk-city.jpg';
 const videoFile2 = imageUri+'/motion-cyberpunk-city.mp4';
