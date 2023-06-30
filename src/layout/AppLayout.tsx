@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
-import Footer from "./Footer/Footer";
+import Spotify from "./Spotify";
+import Footer from "./Footer";
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -8,6 +9,7 @@ interface AppLayoutProps {
 const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <>
+    <Spotify />
     {children}
     <Footer />
     </>
