@@ -1,4 +1,6 @@
 import { ReactNode, useState } from "react";
+import { Link } from "react-router-dom";
+
 import Spotify from "./Spotify";
 import Footer from "./Footer";
 
@@ -28,8 +30,8 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={handleShow}>Spot</Nav.Link>
-            <Nav.Link href="/visual-story/">Still</Nav.Link>
-            <Nav.Link href="/visual-story/motion">Motion</Nav.Link>            
+            <Nav.Link as={Link} to="/still">Still</Nav.Link>
+            <Nav.Link as={Link} to="/motion">Motion</Nav.Link>            
           </Nav>
         </Navbar.Collapse>
       </Container>

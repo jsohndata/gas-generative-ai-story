@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Motion from './pages/Motion';
 import Err404 from './pages/Err404';
@@ -8,13 +8,13 @@ import './styles/App.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>        
-        <Route path="/visual-story/motion" element={ <Motion /> } />
-        <Route path="/visual-story/" element={ <Home /> } />
-        <Route path="/visual-story/*" element={ <Err404 /> } />
+        <Route path="/motion" element={<Motion />} />
+        <Route path="/still" element={ <Home /> } />
+        <Route path="/*" element={ <Err404 /> } />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
