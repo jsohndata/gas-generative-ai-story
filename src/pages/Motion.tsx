@@ -18,6 +18,9 @@ const videoFile4 = imageUri+'/motion-cyber-female-2.mp4';
 const imageFile5 = imageUri+'/motion-street.png';
 const videoFile5 = imageUri+'/motion-street.mp4';
 
+const imageFile6 = imageUri+'/motion-cybernet-robot.png';
+const videoFile6 = imageUri+'/motion-cybernet-robot.mp4';
+
 
 
 const Motion = () => {
@@ -26,6 +29,7 @@ const Motion = () => {
   const [isVideoPlaying3, setIsVideoPlaying3] = useState(false);
   const [isVideoPlaying4, setIsVideoPlaying4] = useState(false);
   const [isVideoPlaying5, setIsVideoPlaying5] = useState(false);
+  const [isVideoPlaying6, setIsVideoPlaying6] = useState(false);
 
 
   const toggleView = (videoPlayingId: any) => {
@@ -36,7 +40,7 @@ const Motion = () => {
     <AppLayout>
       <Container fluid id="motion">
         <Row className="g-4">
-          <Col md={6}>
+          <Col md={6} xl={4}>
             <div className="motion-container">
               {!isVideoPlaying1 ? (
                 <Image 
@@ -62,7 +66,7 @@ const Motion = () => {
           </Col>
 
 
-          <Col md={6}>
+          <Col md={6} xl={4}>
             <div className="motion-container">
               {!isVideoPlaying2 ? (
                 <Image 
@@ -87,7 +91,7 @@ const Motion = () => {
             </div>
           </Col>
 
-          <Col >
+          <Col xl={4}>
           <div className="motion-container">
               {!isVideoPlaying3 ? (
                 <Image 
@@ -133,6 +137,31 @@ const Motion = () => {
                     margin: '0',
                   }}>
                   <source src={videoFile4} type="video/mp4" />
+                </video>
+              )}
+            </div>
+          </Col>
+
+          <Col >
+          <div className="motion-container">
+              {!isVideoPlaying6 ? (
+                <Image 
+                  fluid                   
+                  src={imageFile6} 
+                  alt="Click Me" 
+                  onClick={ () => toggleView(setIsVideoPlaying6)}
+                  />
+              ) : (
+                <video         
+                  autoPlay
+                  controls
+                  style={{ 
+                    width: '100%', 
+                    border: 'none',
+                    padding: '0',
+                    margin: '0',
+                  }}>
+                  <source src={videoFile6} type="video/mp4" />
                 </video>
               )}
             </div>

@@ -13,6 +13,19 @@ body {
 
   .motion-container {
     border: 0.7rem solid rgba(0, 0, 0, 0.566);
+    transform: scale(1.0);    
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0);
+    transition: 
+      transform 0.9s ease-in-out,
+      box-shadow 0.5s ease-in-out
+  }
+
+  .motion-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5rem 0.5rem rgba(245, 245, 4, 0.149);
+    transition: 
+      transform 0.5s ease-in-out,
+      box-shadow 0.4s ease-in-out;
   }
 }
 
