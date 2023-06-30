@@ -24,12 +24,12 @@ const AppLayout = ({ children }: AppLayoutProps) => {
 
   return (
     <>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar variant="dark" expand="lg" sticky="top" className="bg-dark">
       <Container>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle  aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={handleShow}>Spot</Nav.Link>
+            <Nav.Link onClick={handleShow}>✳️</Nav.Link>
             <Nav.Link as={Link} to="/still">Still</Nav.Link>
             <Nav.Link as={Link} to="/motion">Motion</Nav.Link>            
           </Nav>
