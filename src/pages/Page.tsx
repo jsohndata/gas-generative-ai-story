@@ -3,8 +3,11 @@ import { Container, Row, Col, Image } from "../utils/Bootstrap"
 import AppLayout from "../layout/AppLayout";
 
 const imageUri = process.env.PUBLIC_URL + '/images';
-const imageFile = imageUri+'/motion-cyber-girl-still.webp';
-const videoFile = imageUri+'/motion-cyber-girl-movie.mp4';
+const imageFile1 = imageUri+'/motion-cyber-girl-still.webp';
+const videoFile1 = imageUri+'/motion-cyber-girl-movie.mp4';
+
+const imageFile2 = imageUri+'/motion-cyberpunk-city.jpg';
+const videoFile2 = imageUri+'/motion-cyberpunk-city.mp4';
 
 const Page = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -20,7 +23,7 @@ const Page = () => {
           <Col>
             {!isVideoPlaying ? (
               <Image 
-                src={imageFile} 
+                src={imageFile1} 
                 alt="Click Me" 
                 onClick={handleClick}
                 style={{ width: '100%', }} />
@@ -34,7 +37,30 @@ const Page = () => {
                   padding: '0',
                   margin: '0',
                 }}>
-                <source src={videoFile} type="video/mp4" />
+                <source src={videoFile1} type="video/mp4" />
+              </video>
+            )}
+          </Col>
+
+
+          <Col>
+            {!isVideoPlaying ? (
+              <Image 
+                src={imageFile2} 
+                alt="Click Me" 
+                onClick={handleClick}
+                style={{ width: '100%', }} />
+            ) : (
+              <video         
+                autoPlay
+                controls
+                style={{ 
+                  width: '100%', 
+                  border: 'none',
+                  padding: '0',
+                  margin: '0',
+                }}>
+                <source src={videoFile2} type="video/mp4" />
               </video>
             )}
           </Col>
