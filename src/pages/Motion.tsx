@@ -13,10 +13,7 @@ const imageFile3 = imageUri+'/motion-cyber-male.png';
 const videoFile3 = imageUri+'/motion-cyber-male.mp4';
 
 const imageFile4 = imageUri+'/motion-cyber-female-2.png';
-const videoFile4 = imageUri+'/motion-cyber-female-2.mp4';
-
-const imageFile5 = imageUri+'/motion-street.png';
-const videoFile5 = imageUri+'/motion-street.mp4';
+const videoFile4 = imageUri+'/motion-cyber-female-2.webp';
 
 const imageFile6 = imageUri+'/motion-cybernet-robot.png';
 const videoFile6 = imageUri+'/motion-cybernet-robot.mp4';
@@ -31,7 +28,6 @@ const Motion = () => {
   const [isVideoPlaying2, setIsVideoPlaying2] = useState(false);
   const [isVideoPlaying3, setIsVideoPlaying3] = useState(false);
   const [isVideoPlaying4, setIsVideoPlaying4] = useState(false);
-  const [isVideoPlaying5, setIsVideoPlaying5] = useState(false);
   const [isVideoPlaying6, setIsVideoPlaying6] = useState(false);
   const [isVideoPlaying7, setIsVideoPlaying7] = useState(false);
 
@@ -51,8 +47,7 @@ const Motion = () => {
                   fluid
                   src={imageFile1} 
                   alt="Click Me" 
-                  onClick={ () => toggleView(setIsVideoPlaying1)}
-                  />
+                  onClick={ () => toggleView(setIsVideoPlaying1)} />
               ) : (
                 <video         
                   autoPlay
@@ -128,20 +123,13 @@ const Motion = () => {
                   fluid                   
                   src={imageFile4} 
                   alt="Click Me" 
-                  onClick={ () => toggleView(setIsVideoPlaying4)}
-                  />
+                  onClick={ () => toggleView(setIsVideoPlaying4)} />
               ) : (
-                <video         
-                  autoPlay
-                  controls
-                  style={{ 
-                    width: '100%', 
-                    border: 'none',
-                    padding: '0',
-                    margin: '0',
-                  }}>
-                  <source src={videoFile4} type="video/mp4" />
-                </video>
+                <Image 
+                  fluid                   
+                  src={videoFile4} 
+                  alt="Click Me" 
+                  onClick={ () => toggleView(setIsVideoPlaying4)} />
               )}
             </div>
           </Col>
@@ -196,30 +184,7 @@ const Motion = () => {
             </div>
           </Col>
 
-          <Col xs={12} id="banner">
-            <div className="motion-container">
-              {!isVideoPlaying5 ? (
-                <Image 
-                  fluid                   
-                  src={imageFile5} 
-                  alt="Click Me" 
-                  onClick={ () => toggleView(setIsVideoPlaying5)}
-                  style={{width: "100%"}} />
-              ) : (
-                <video         
-                  autoPlay
-                  controls
-                  style={{ 
-                    width: '100%', 
-                    border: 'none',
-                    padding: '0',
-                    margin: '0',
-                  }}>
-                  <source src={videoFile5} type="video/mp4" />
-                </video>
-              )}
-            </div>
-          </Col>
+          
           
         </Row>
       </Container>
