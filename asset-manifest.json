@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/curious-kaleidoscope/static/css/main.ef79152c.css",
-    "main.js": "/curious-kaleidoscope/static/js/main.8f7f4a9b.js",
+    "main.js": "/curious-kaleidoscope/static/js/main.4d75f847.js",
     "static/media/bg1.webp": "/curious-kaleidoscope/static/media/bg1.4eb705ad84408294cc2f.webp",
     "index.html": "/curious-kaleidoscope/index.html",
     "main.ef79152c.css.map": "/curious-kaleidoscope/static/css/main.ef79152c.css.map",
-    "main.8f7f4a9b.js.map": "/curious-kaleidoscope/static/js/main.8f7f4a9b.js.map"
+    "main.4d75f847.js.map": "/curious-kaleidoscope/static/js/main.4d75f847.js.map"
   },
   "entrypoints": [
     "static/css/main.ef79152c.css",
-    "static/js/main.8f7f4a9b.js"
+    "static/js/main.4d75f847.js"
   ]
 }
