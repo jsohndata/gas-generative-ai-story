@@ -10,7 +10,7 @@ export default function ImageSwap( {imageFile, motionFile}: ImageSwapProps) {
   const [isImageSwap, setIsImageSwap] = useState(false);
 
   const toggleView = () => {
-    setIsImageSwap(true);
+    setIsImageSwap(!isImageSwap);
 
     const motionContainer:any = document.querySelector('.motion-img');
     motionContainer.style.animationDirection = isImageSwap ? 'reverse' : 'normal';
