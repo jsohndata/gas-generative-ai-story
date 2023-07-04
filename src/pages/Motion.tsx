@@ -8,7 +8,7 @@ const Motion = () => {
   return (
     <AppLayout>
       <Container fluid id="motion">
-        <Row className="g-4">
+        <Row className="g-5 justify-content-center">
           <Col md={6} xl={4}>
             <ImageSwap 
               imageFile={imageUri+'/motion-cyber-female.webp'}
@@ -23,9 +23,23 @@ const Motion = () => {
 
           <Col md={6} xl={4}>
             <ImageSwap 
+              imageFile={imageUri+'/motion-cyber-female-2.png'}
+              motionFile={imageUri+'/motion-cyber-female-2.webp'} />              
+          </Col>          
+
+          <Col md={6} xl={4}>
+            <ImageSwap 
               imageFile={imageUri+'/motion-cybernet-robot.png'}
               motionFile={imageUri+'/motion-cybernet-robot-motion.webp'} />              
           </Col>
+
+          <Col md={6} xl={4}>
+            <ImageSwap 
+              imageFile={imageUri+'/motion-cyberpunk-city.jpg'}
+              motionFile={imageUri+'/motion-cyberpunk-city.webp'} />              
+          </Col>
+
+
 
         </Row>
       </Container>
@@ -34,7 +48,6 @@ const Motion = () => {
 }
 
 export default Motion;
-
 /* 
   // const [isVideoPlaying2, setIsVideoPlaying2] = useState(false);
   // const [isVideoPlaying3, setIsVideoPlaying3] = useState(false);
@@ -44,9 +57,6 @@ export default Motion;
 
 const imageFile2 = imageUri+'/motion-cyberpunk-city.jpg';
 const videoFile2 = imageUri+'/motion-cyberpunk-city.mp4';
-
-const imageFile4 = imageUri+'/motion-cyber-female-2.png';
-const videoFile4 = imageUri+'/motion-cyber-female-2.webp';
 
 const imageFile7 = imageUri+'/motion-twins.png';
 const videoFile7 = imageUri+'/motion-twins.mp4';

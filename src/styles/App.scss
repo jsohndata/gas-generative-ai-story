@@ -19,17 +19,21 @@ body {
     border: 0.7rem solid rgba(0, 0, 0, 0.566);
     transform: scale(1.0);    
     box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0);
+    border: 2px solid rgba(255, 192, 203, 0.117);
     transition: 
       transform 0.9s ease-in-out,
-      box-shadow 0.5s ease-in-out
+      box-shadow 0.5s ease-in-out,
+      border 0.5s ease-in-out;
   }
 
   .motion-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 0.5rem 0.5rem rgba(245, 245, 4, 0.149);
+    transform: scale(1.06);
+    box-shadow: 0 0 1.9rem rgba(245, 245, 4, 0.549);
+    border: 2px solid rgba(255, 199, 126, 0.744);
     transition: 
       transform 0.5s ease-in-out,
-      box-shadow 0.4s ease-in-out;
+      box-shadow 0.4s ease-in-out,
+      border 0.5s ease-in-out;
   }
 }
 

@@ -9,38 +9,36 @@ interface ImageSwapProps {
 export default function ImageSwap( {imageFile, motionFile}: ImageSwapProps) {
   const [isImageSwap, setIsImageSwap] = useState(false);
 
-  const toggleView = (ImageSwapId: any) => { ImageSwapId(true); };
-  
+  const toggleView = () => {
+    setIsImageSwap(true);
+
+    const motionContainer:any = document.querySelector('.motion-img');
+    motionContainer.style.animationDirection = isImageSwap ? 'reverse' : 'normal';
+
+    // if (isImageSwap) {
+    //   motionContainer.style.animationPlayState = 'running';
+    // } else {
+    //   motionContainer.style.animationPlayState = 'paused';
+    // }
+  };
+
   return (
-      <div className="motion-container">
-        {
-          !isImageSwap
-          ? (<Image 
-            fluid                   
-            src={imageFile} 
-            alt="Click Me" 
-            onClick={ () => toggleView(setIsImageSwap)} />)
-
-          : (<Image 
-            fluid                   
-            src={motionFile} 
-            alt="Click Me" 
-            onClick={ () => toggleView(setIsImageSwap)} />) 
-        }
-      </div>
+    <figure className="motion-container">
+      {!isImageSwap ? (
+        <Image
+          fluid
+          src={imageFile}
+          alt="Click Me"
+          className="motion-img"
+          onClick={toggleView} />
+      ) : (
+        <Image
+          fluid
+          src={motionFile}
+          alt="Click Me"
+          className="motion-img"
+          onClick={toggleView} />
+      )}
+    </figure>
   );
-}
-
-/*
-<video         
-  autoPlay
-  controls
-  style={{ 
-    width: '100%', 
-    border: 'none',
-    padding: '0',
-    margin: '0',
-  }}>
-  <source src={motionFile} type="video/mp4" />
-</video>
-*/
+};
