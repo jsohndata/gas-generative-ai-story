@@ -2,7 +2,7 @@
   "name": "curious-kaleidoscope",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jsohndata.github.io/curious-kaleidoscope",
+  "homepage": "https://jsohndata.github.io/gas-generative-ai-story",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.5",
