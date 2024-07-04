@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gas-generative-ai-story/static/css/main.d1461ff8.css",
-    "main.js": "/gas-generative-ai-story/static/js/main.9aeb4b22.js",
+    "main.js": "/gas-generative-ai-story/static/js/main.36ae1825.js",
     "static/media/bg1.webp": "/gas-generative-ai-story/static/media/bg1.4eb705ad84408294cc2f.webp",
     "index.html": "/gas-generative-ai-story/index.html",
     "main.d1461ff8.css.map": "/gas-generative-ai-story/static/css/main.d1461ff8.css.map",
-    "main.9aeb4b22.js.map": "/gas-generative-ai-story/static/js/main.9aeb4b22.js.map"
+    "main.36ae1825.js.map": "/gas-generative-ai-story/static/js/main.36ae1825.js.map"
   },
   "entrypoints": [
     "static/css/main.d1461ff8.css",
-    "static/js/main.9aeb4b22.js"
+    "static/js/main.36ae1825.js"
   ]
 }
