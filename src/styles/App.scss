@@ -12,12 +12,12 @@ body {
   background-attachment: fixed;
 
   #banner {
-    margin: 100px 0px 200px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   .motion-container {
-    border: 0.7rem solid rgba(0, 0, 0, 0.566);
-    transform: scale(1.0);    
+    border: 2rem solid rgba(0, 0, 0, 0.566);
+    transform: scale(0.7);    
     box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0);
     border: 2px solid rgba(255, 192, 203, 0.117);
     transition: 
@@ -27,7 +27,7 @@ body {
   }
 
   .motion-container:hover {
-    transform: scale(1.06);
+    transform: scale(0.8);
     box-shadow: 0 0 1.9rem rgba(245, 245, 4, 0.549);
     border: 2px solid rgba(255, 199, 126, 0.744);
     transition: 
